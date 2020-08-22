@@ -1,1 +1,16 @@
-<p>contacts works!</p>
+<div class="container">
+ <div class="card" ngClass (click) = "goToLinkedIn()" >
+   <div class="icon"><img src="../../../assets/linkedin (1).svg" alt=""></div>
+   <div class="network"><p>LikedIn</p></div>
+ </div>
+ <div class="card" (click) ="goToGitHub() ">
+  <div class="icon">
+    <img src="../../../assets/github-logo.svg" alt="">
+  </div>
+  <div class="network"><p>GitHub</p></div>
+</div>
+<div class="card" (click)= "goToGmail()">
+  <div class="icon"><img src="../../../assets/gmail.svg" alt=""></div>
+  <div class="network"><p>Gmail</p></div>
+</div>
+</div>

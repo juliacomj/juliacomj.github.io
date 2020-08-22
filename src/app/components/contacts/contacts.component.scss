@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+
+}
+
+.card {
+  height: 100px;
+  width: 300px;
+  box-shadow: 0 0 5px 0px #e2e2e2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin: 16px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:nth-child(1):hover{
+    border: 1px solid #0687C7;
+    transform: translate(1px,1px);
+    color: #0687C7;
+    font-weight: bold;
+}
+
+.card:nth-child(2):hover{
+  border: 1px solid #7A00F5;
+  transform: translate(1px,1px);
+  color: #7A00F5;
+  font-weight: bold;
+}
+
+.card:nth-child(3):hover{
+  border: 1px solid #F50000;
+  transform: translate(1px,1px);
+  color: #F50000;
+  font-weight: bold;
+}
+
+
+
+
+
+

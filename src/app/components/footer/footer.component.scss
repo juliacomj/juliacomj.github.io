@@ -5,6 +5,7 @@
   height: 30px;
   background-color: #0687C7;
   bottom: 0;
+  text-align: center;
 
 }
 
@@ -14,15 +15,17 @@ p{
   color: #fff;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (width: 768px){
  .footer{
   position: fixed;
+  height: 50px;
  }
 
 }
 
-@media only screen and (max-width: 1023px){
+@media only screen and (width: 1024px){
   .footer{
-    position: relative;
+    position: fixed;
+    height: 50px;
    }
 }

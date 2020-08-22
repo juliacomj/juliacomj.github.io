@@ -12,4 +12,16 @@ export class ContactsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goToLinkedIn() {
+    window.location.href ='https://www.linkedin.com/in/julia-roldi/';
+  }
+
+  goToGitHub() {
+    window.location.href ='https://github.com/juliacomj';
+  }
+
+  goToGmail() {
+    window.location.href ='mailto:julialcantara.ra@gmail.com?Subject=Oi';
+  }
+
 }
