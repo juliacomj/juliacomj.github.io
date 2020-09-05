@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "styles/colors";
+@import 'styles/animations';
+@import "styles/themes";
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
-body {
- background-color: #FFEEEC;
- font-family: 'Fira Code', monospace;
- margin: 0;
-}
+
