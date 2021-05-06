@@ -1,4 +1,23 @@
 
-<app-header></app-header>
+
+
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
+ <div [ngClass]="{'waves-dark': !isOpen}" class="waves-up">
+ </div>
+ <div class="toggle">
+  <img src="https://img.icons8.com/clouds/100/000000/smiling-sun.png"/>
+  <mat-slide-toggle (change)=toggle() ></mat-slide-toggle>
+  <img src="https://img.icons8.com/clouds/100/000000/bright-moon.png"/>
+ </div>
+  <img src="../assets/avatar.png" aria-hidden="true">
+  <p [ngClass]="{'title-dark': !isOpen}"  >Front-end Developer</p>
+  <div  class="icons">
+    <img (click)=goToLink(github)  src="../assets/github-logo.svg" alt="Clique para github">
+    <img (click)=goToLink(gmail)  src="../assets/gmail.svg" alt="Clique para gmail">
+    <img (click)=goToLink(linkedIn)  src="../assets/linkedin (1).svg" alt="Clique para LinkedIn">
+  </div>
+  <div [ngClass]="{'waves-dark': !isOpen}" class="waves-down">
+  </div>
+</div>
+
 <router-outlet></router-outlet>
-<app-footer></app-footer>

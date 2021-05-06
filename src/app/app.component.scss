@@ -1,4 +1,78 @@
+.open-close-container{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+img{
+  margin: 1rem;
+}
+
+p{
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.title-dark{
+  color: #F7F6F1;
+}
+
+.waves-down {
+  width: 100%;
+  height: 100%;
+  background-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(9, 137, 239, 1)" d="M 0 0 C 181 0 181 148 362 148 L 362 148 L 362 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(9, 137, 239, 1)" d="M 361 148 C 525.5 148 525.5 44 690 44 L 690 44 L 690 0 L 361 0 Z" stroke-width="0"></path> <path fill="rgba(9, 137, 239, 1)" d="M 689 44 C 874.5 44 874.5 147 1060 147 L 1060 147 L 1060 0 L 689 0 Z" stroke-width="0"></path><path fill="rgba(9, 137, 239, 1)" d="M 1059 147 C 1249.5 147 1249.5 0 1440 0 L 1440 0 L 1440 0 L 1059 0 Z" stroke-width="0"></path></svg>');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+ }
+
+ .waves-up {
+  width: 100%;
+  height: 100%;
+  background-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(9, 137, 239, 1)" d="M 0 0 C 181 0 181 148 362 148 L 362 148 L 362 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(9, 137, 239, 1)" d="M 361 148 C 525.5 148 525.5 44 690 44 L 690 44 L 690 0 L 361 0 Z" stroke-width="0"></path> <path fill="rgba(9, 137, 239, 1)" d="M 689 44 C 874.5 44 874.5 147 1060 147 L 1060 147 L 1060 0 L 689 0 Z" stroke-width="0"></path><path fill="rgba(9, 137, 239, 1)" d="M 1059 147 C 1249.5 147 1249.5 0 1440 0 L 1440 0 L 1440 0 L 1059 0 Z" stroke-width="0"></path></svg>');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+ }
+
+ .waves-dark{
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(239, 204, 9, 1)" d="M 0 0 C 181 0 181 148 362 148 L 362 148 L 362 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(239, 204, 9, 1)" d="M 361 148 C 525.5 148 525.5 44 690 44 L 690 44 L 690 0 L 361 0 Z" stroke-width="0"></path> <path fill="rgba(239, 204, 9, 1)" d="M 689 44 C 874.5 44 874.5 147 1060 147 L 1060 147 L 1060 0 L 689 0 Z" stroke-width="0"></path><path fill="rgba(239, 204, 9, 1)" d="M 1059 147 C 1249.5 147 1249.5 0 1440 0 L 1440 0 L 1440 0 L 1059 0 Z" stroke-width="0"></path></svg>');
+ }
 
 
 
+ @media (max-width:1439px) {
+  .waves-down .waves-up {
+    background-size: contain;
+  }
+ }
+
+
+.icons{
+    margin: 1rem;
+
+  img{
+    border-radius: 0;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+
+  }
+  img:hover{
+    transform: translate(2px, 2px);
+  }
+
+
+}
+
+.toggle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 50px;
+    height: 50px;
+  }
+}
 

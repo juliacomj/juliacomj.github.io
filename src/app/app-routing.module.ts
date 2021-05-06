@@ -1,25 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ContactsComponent } from './components/contacts/contacts.component';
 import { AppComponent } from './app.component';
-import { ExperienceComponent } from '../app/components/experience/experience.component'
 
-const routes: Routes = [
-    { path: '',
-      redirectTo: '/experience',
-      pathMatch: 'full'
-    },
-    { path: 'experience',
-      component: ExperienceComponent,
-    },
-    { path:'contatcs',
-      component: ContactsComponent,
-    },
 
-];
+const routes: Routes = [];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }
