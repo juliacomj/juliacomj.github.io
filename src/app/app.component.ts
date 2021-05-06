@@ -15,11 +15,9 @@ import {
   animations:[
     trigger('openClose', [
       state('open', style({
-        height: '100vh',
         backgroundColor: '#F7F6F1'
       })),
       state('closed', style({
-        height: '100vh',
         backgroundColor: '#012B79'
       })),
       transition('open => closed', [
@@ -36,7 +34,7 @@ export class AppComponent {
   isOpen = true;
   readonly linkedIn = 'https://www.linkedin.com/in/julia-roldi/';
   readonly github = 'https://github.com/juliacomj';
-readonly gmail = 'mailto:julialcantara.ra@gmail.com?Subject=Oi';
+  readonly gmail = 'mailto:julialcantara.ra@gmail.com?Subject=Oi';
 
 
   toggle() {

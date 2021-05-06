@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     BrowserAnimationsModule,
     AppRoutingModule,
     MatSlideToggleModule,
+    ScullyLibModule,
   ],
   providers: [
   ],
